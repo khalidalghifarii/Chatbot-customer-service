@@ -89,7 +89,7 @@ def initialize_and_train() -> None:
         trainer = ListTrainer(chatbot)
 
         # Training dari corpus customer service
-        cs_base_path = os.path.join("chatterbot_corpus", "data", "indonesian", "customer_service")
+        cs_base_path = os.path.join("chatterbot_corpus", "data")
         if os.path.exists(cs_base_path):
             logger.info(f"Loading customer service YAML files from {cs_base_path}")
             
