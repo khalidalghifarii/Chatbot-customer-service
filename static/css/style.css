@@ -1,0 +1,269 @@
+/* Reset dan Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  height: 100vh;
+}
+
+/* Container Styles */
+.chat-container {
+  max-width: 800px;
+  margin: 20px auto;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 40px);
+}
+
+/* Header Styles */
+.chat-header {
+  background: #075e54;
+  color: white;
+  padding: 20px;
+  border-radius: 10px 10px 0 0;
+  text-align: center;
+  position: relative;
+}
+
+/* Chat Box Styles */
+.chat-box {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  background: #e5e5e5;
+  scroll-behavior: smooth;
+}
+
+/* Message Styles */
+.message {
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 10px;
+  max-width: 80%;
+  position: relative;
+  animation: fadeIn 0.3s ease-in-out;
+  word-wrap: break-word;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.user-message {
+  background-color: #dcf8c6;
+  margin-left: auto;
+  border-bottom-right-radius: 5px;
+}
+
+.bot-message {
+  background-color: white;
+  margin-right: auto;
+  border-bottom-left-radius: 5px;
+}
+
+/* Timestamp Styles */
+.timestamp {
+  font-size: 0.7em;
+  color: #999;
+  margin-top: 5px;
+  text-align: right;
+}
+
+/* Input Container Styles */
+.input-container {
+  padding: 20px;
+  background: white;
+  border-top: 1px solid #e5e5e5;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+#user-input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  outline: none;
+  font-size: 14px;
+  transition: border-color 0.3s;
+}
+
+#user-input:focus {
+  border-color: #075e54;
+}
+
+/* Button Styles */
+button {
+  padding: 12px 24px;
+  background: #075e54;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.1s;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #128c7e;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+/* Typing Indicator Styles */
+.typing-indicator {
+  padding: 10px 20px;
+  display: none;
+  color: #666;
+  font-style: italic;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  margin: 10px 0;
+  animation: fadeIn 0.3s;
+}
+
+/* Suggestions Styles */
+.suggestions-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+  padding: 0 10px;
+}
+
+.suggestion-chip {
+  background: #e3f2fd;
+  padding: 8px 16px;
+  border-radius: 16px;
+  font-size: 0.9em;
+  cursor: pointer;
+  border: 1px solid #90caf9;
+  transition: all 0.2s;
+}
+
+.suggestion-chip:hover {
+  background: #bbdefb;
+  transform: translateY(-1px);
+}
+
+/* Feedback Styles */
+.feedback-container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 5px;
+  opacity: 0.7;
+}
+
+.feedback-button {
+  background: none;
+  border: none;
+  padding: 4px 8px;
+  cursor: pointer;
+  font-size: 0.8em;
+  color: #666;
+}
+
+.feedback-button:hover {
+  color: #075e54;
+  background: rgba(7, 94, 84, 0.1);
+}
+
+/* Chat Options Styles */
+#chat-options {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#clear-chat {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 5px;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+
+#clear-chat:hover {
+  opacity: 1;
+}
+
+/* Error Message Styles */
+.error-message {
+  background: #ffebee;
+  color: #c62828;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+/* FAQ Buttons Styles */
+.faq-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.faq-button {
+  background: #ffffff;
+  color: #075e54;
+  border: 1px solid #075e54;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9em;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: all 0.3s ease;
+}
+
+.faq-button:hover {
+  background: #075e54;
+  color: #ffffff;
+}
+
+/* Quick Reply Styles */
+.quick-reply-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.quick-reply {
+  background: #e3f2fd;
+  padding: 8px 16px;
+  border-radius: 16px;
+  font-size: 0.9em;
+  cursor: pointer;
+  border: 1px solid #90caf9;
+  transition: all 0.2s;
+}
+
+.quick-reply:hover {
+  background: #bbdefb;
+  transform: translateY(-1px);
+}

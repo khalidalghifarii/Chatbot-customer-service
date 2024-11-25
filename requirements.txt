@@ -1,0 +1,6 @@
+flask==2.0.1
+chatterbot==1.0.8
+pyyaml==5.4.1
+python-dateutil==2.8.2
+nltk==3.6.3
+SQLAlchemy==1.4.23

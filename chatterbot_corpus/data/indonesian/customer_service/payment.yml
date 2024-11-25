@@ -1,0 +1,46 @@
+categories:
+  - payment
+conversations:
+  - - Metode pembayaran
+    - |
+      Kami menerima pembayaran melalui:
+      1. Transfer Bank:
+         - BCA
+         - Mandiri
+         - BNI
+         - BRI
+      2. E-Wallet:
+         - OVO
+         - GoPay
+         - DANA
+         - ShopeePay
+      3. Kartu Kredit (Visa/Mastercard)
+      4. COD (Cash On Delivery)*
+
+      *COD tersedia untuk wilayah tertentu
+  - - Cara bayar
+    - |
+      Kami menerima pembayaran melalui:
+      1. Transfer Bank
+      2. E-Wallet
+      3. Kartu Kredit
+      4. COD (wilayah tertentu)
+
+      Metode mana yang ingin Anda gunakan?
+  - - Bayar pakai apa saja
+    - |
+      Kami menerima pembayaran melalui:
+      1. Transfer Bank
+      2. E-Wallet
+      3. Kartu Kredit
+      4. COD (wilayah tertentu)
+
+      Metode mana yang ingin Anda gunakan?
+  - - Apakah bisa bayar di tempat
+    - |
+      Ya, kami menyediakan layanan COD (Cash On Delivery) untuk wilayah tertentu.
+      Silakan cek ketersediaan COD saat checkout.
+  - - Apakah bisa bayar pakai kartu kredit
+    - |
+      Ya, kami menerima pembayaran menggunakan kartu kredit Visa dan Mastercard.
+      Pembayaran dijamin aman dengan enkripsi SSL.

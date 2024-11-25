@@ -1,0 +1,146 @@
+categories:
+  - Customer Support
+
+conversations:
+  # Basic Conversations
+  - - Halo
+    - |
+      Hai! Selamat datang di Customer Service kami. 
+      Anda dapat memilih topik bantuan berikut:
+      1. Retur Barang
+      2. Pembayaran
+      3. Pengiriman & Tracking
+      4. FAQ Umum
+
+      Silakan pilih nomor atau ketik pertanyaan Anda.
+
+  # Retur Barang
+  - - Retur Barang
+    - |
+      Informasi seputar retur barang:
+      1. Cara mengemas barang retur
+      2. Proses dan waktu retur
+      3. Biaya retur
+      4. Status retur
+
+      Silakan pilih informasi yang Anda butuhkan.
+
+  - - Cara mengemas barang retur
+    - |
+      Panduan mengemas barang retur:
+      1. Gunakan kemasan yang aman dan rapi
+      2. Pastikan semua label original masih terpasang
+      3. Sertakan nota pembelian
+      4. Lampirkan formulir retur
+
+      Butuh informasi lain?
+
+  - - Bagaimana cara mengemas barang retur
+    - |
+      Panduan mengemas barang retur:
+      1. Gunakan kemasan yang aman dan rapi
+      2. Pastikan semua label original masih terpasang
+      3. Sertakan nota pembelian
+      4. Lampirkan formulir retur
+
+      Butuh informasi lain?
+
+  # Pembatalan Pesanan
+  - - Cara membatalkan pesanan
+    - |
+      Untuk membatalkan pesanan:
+      1. Login ke akun Anda
+      2. Pilih menu "Pesanan Saya"
+      3. Pilih pesanan yang ingin dibatalkan
+      4. Klik tombol "Batalkan Pesanan"
+      5. Pilih alasan pembatalan
+
+      Note: Pembatalan hanya bisa dilakukan sebelum pesanan dikemas.
+
+  - - Bagaimana membatalkan pesanan
+    - |
+      Untuk membatalkan pesanan:
+      1. Login ke akun Anda
+      2. Pilih menu "Pesanan Saya"
+      3. Pilih pesanan yang ingin dibatalkan
+      4. Klik tombol "Batalkan Pesanan"
+      5. Pilih alasan pembatalan
+
+      Note: Pembatalan hanya bisa dilakukan sebelum pesanan dikemas.
+
+  # Ubah Alamat
+  - - Cara mengubah alamat
+    - |
+      Untuk mengubah alamat pengiriman:
+      1. Login ke akun Anda
+      2. Klik menu "Profil"
+      3. Pilih "Daftar Alamat"
+      4. Klik "Edit" pada alamat yang ingin diubah
+      5. Simpan perubahan
+
+      Catatan: Alamat pesanan yang sudah diproses tidak dapat diubah.
+
+  - - Bagaimana mengubah alamat
+    - |
+      Untuk mengubah alamat pengiriman:
+      1. Login ke akun Anda
+      2. Klik menu "Profil"
+      3. Pilih "Daftar Alamat"
+      4. Klik "Edit" pada alamat yang ingin diubah
+      5. Simpan perubahan
+
+      Catatan: Alamat pesanan yang sudah diproses tidak dapat diubah.
+
+  # Hubungi CS
+  - - Cara menghubungi CS
+    - |
+      Anda dapat menghubungi Customer Service kami melalui:
+      1. Live Chat (24/7)
+      2. Email: cs@example.com
+      3. Telepon: 021-1234567
+      4. WhatsApp: 0812-3456-7890
+
+      Jam operasional: Senin-Minggu, 08.00-22.00 WIB
+
+  - - Bagaimana cara menghubungi CS
+    - |
+      Anda dapat menghubungi Customer Service kami melalui:
+      1. Live Chat (24/7)
+      2. Email: cs@example.com
+      3. Telepon: 021-1234567
+      4. WhatsApp: 0812-3456-7890
+
+      Jam operasional: Senin-Minggu, 08.00-22.00 WIB
+
+  # Lacak Pesanan
+  - - Cara lacak pesanan
+    - |
+      Untuk melacak pesanan Anda:
+      1. Login ke akun Anda
+      2. Klik menu "Pesanan Saya"
+      3. Pilih pesanan yang ingin dilacak
+      4. Lihat status pengiriman terkini
+
+      Atau masukkan nomor resi di kolom pelacakan.
+
+  - - Bagaimana cara lacak pesanan
+    - |
+      Untuk melacak pesanan Anda:
+      1. Login ke akun Anda
+      2. Klik menu "Pesanan Saya"
+      3. Pilih pesanan yang ingin dilacak
+      4. Lihat status pengiriman terkini
+
+      Atau masukkan nomor resi di kolom pelacakan.
+
+  # Default Response
+  - - default
+    - |
+      Maaf, saya tidak mengerti pertanyaan Anda. 
+      Silakan pilih topik bantuan berikut:
+      1. Retur Barang
+      2. Pembayaran
+      3. Pengiriman & Tracking
+      4. FAQ Umum
+
+      Atau ketik pertanyaan Anda dengan lebih detail.

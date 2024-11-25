@@ -1,0 +1,25 @@
+categories:
+  - customer_service_greetings
+conversations:
+  - - Assalamu'alaikum
+    - Wa'alaikum salam. Ada yang bisa kami bantu?
+  - - Selamat pagi
+    - Selamat pagi! Ada yang bisa kami bantu?
+  - - Selamat siang
+    - Selamat siang! Ada yang bisa kami bantu?
+  - - Selamat sore
+    - Selamat sore! Ada yang bisa kami bantu?
+  - - Selamat malam
+    - Selamat malam! Ada yang bisa kami bantu?
+  - - Halo
+    - Halo! Ada yang bisa kami bantu?
+  - - Hi
+    - Halo! Ada yang bisa kami bantu?
+  - - Hai
+    - Halo! Ada yang bisa kami bantu?
+  - - Hey
+    - Halo! Ada yang bisa kami bantu?
+  - - Permisi
+    - Ya, ada yang bisa kami bantu?
+  - - Mohon bantuan
+    - Tentu, ada yang bisa kami bantu?
