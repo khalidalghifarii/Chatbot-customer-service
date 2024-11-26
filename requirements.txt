@@ -1,6 +1,9 @@
-flask==2.0.1
-chatterbot==1.0.0
-pyyaml==5.4.1
-python-dateutil==2.8.2
-nltk==3.6.3
-SQLAlchemy==1.4.23
+Flask==3.1.0
+ChatterBot==1.0.0
+PyYAML==3.13
+python-dateutil==2.9.0.post0
+nltk==3.9.1
+SQLAlchemy==1.2.19
+matplotlib==3.9.2
+seaborn==0.13.2
+numpy==2.0.2
