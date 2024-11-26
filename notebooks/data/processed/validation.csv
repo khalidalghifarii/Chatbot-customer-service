@@ -1,0 +1,15 @@
+question,answer,category,question_length,answer_length,processed_question,processed_answer
+Senang berkenalan dengan mu.,Terimakasih.,greetings,28,12,senang berkenalan dengan mu.,terimakasih.
+Selamat malam,Selamat malam! Ada yang bisa kami bantu?,greetings,13,40,selamat malam,selamat malam! ada yang bisa kami bantu?
+Kamu sudah mendengar beritanya?,Berita tentang apa?,conversation,31,19,kamu sudah mendengar beritanya?,berita tentang apa?
+Siapakah presiden pertama Republik Indonesia?,Ir. Soekarno,trivia,45,12,siapakah presiden pertama republik indonesia?,ir. soekarno
+Apa kabar?,Baik,greetings,10,4,apa kabar?,baik
+Apakah bisa bayar di tempat,"Ya, kami menyediakan layanan COD (Cash On Delivery) untuk wilayah tertentu.
+Silakan cek ketersediaan COD saat checkout.
+",payment,27,120,apakah bisa bayar di tempat,"ya, kami menyediakan layanan cod cash on delivery untuk wilayah tertentu. silakan cek ketersediaan cod saat checkout."
+Bagaimana cara retur,"Untuk retur barang, silakan ikuti langkah berikut:
+1. Login ke akun Anda
+2. Pilih pesanan yang ingin diretur
+3. Klik tombol ""Ajukan Retur""
+4. Ikuti instruksi selanjutnya
+",retur,20,170,bagaimana cara retur,"untuk retur barang, silakan ikuti langkah berikut 1. login ke akun anda 2. pilih pesanan yang ingin diretur 3. klik tombol ajukan retur 4. ikuti instruksi selanjutnya"

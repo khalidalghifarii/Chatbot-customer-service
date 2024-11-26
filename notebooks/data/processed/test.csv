@@ -1,0 +1,18 @@
+question,answer,category,question_length,answer_length,processed_question,processed_answer
+Biaya retur ditanggung siapa,"Ketentuan biaya retur:
+1. Kesalahan produk/penjual: Biaya ditanggung kami
+2. Kesalahan pembeli: Biaya ditanggung pembeli
+3. Barang tidak sesuai: Biaya ditanggung kami
+",retur,28,167,biaya retur ditanggung siapa,ketentuan biaya retur 1. kesalahan produkpenjual biaya ditanggung kami 2. kesalahan pembeli biaya ditanggung pembeli 3. barang tidak sesuai biaya ditanggung kami
+Selamat siang,Siang juga,greetings,13,10,selamat siang,siang juga
+Burung tercepat di dunia adalah?,Falcon,trivia,32,6,burung tercepat di dunia adalah?,falcon
+Cara retur,"Untuk retur barang, silakan ikuti langkah berikut:
+1. Login ke akun Anda
+2. Pilih pesanan yang ingin diretur
+3. Klik tombol ""Ajukan Retur""
+4. Ikuti instruksi selanjutnya
+",retur,10,170,cara retur,"untuk retur barang, silakan ikuti langkah berikut 1. login ke akun anda 2. pilih pesanan yang ingin diretur 3. klik tombol ajukan retur 4. ikuti instruksi selanjutnya"
+Apa kabar mu?,Baik.,greetings,13,5,apa kabar mu?,baik.
+Bagaimana kabar mu?,"Baik, kamu?",greetings,19,11,bagaimana kabar mu?,"baik, kamu?"
+Halo,Halo! Ada yang bisa kami bantu?,greetings,4,31,halo,halo! ada yang bisa kami bantu?
+Semoga pagi mu menyenangkan!,Terimakasih untuk kebaikannya.,greetings,28,30,semoga pagi mu menyenangkan!,terimakasih untuk kebaikannya.

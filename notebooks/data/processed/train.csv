@@ -1,0 +1,111 @@
+question,answer,category,question_length,answer_length,processed_question,processed_answer
+Nama galaksi yang paling dekat dengan galaksi kita adalah?,Andromeda,trivia,58,9,nama galaksi yang paling dekat dengan galaksi kita adalah?,andromeda
+Cara mengemas barang retur,"Panduan mengemas barang retur:
+1. Gunakan kemasan yang aman dan rapi
+2. Pastikan semua label original masih terpasang
+3. Sertakan nota pembelian
+4. Lampirkan formulir retur
+",retur,26,173,cara mengemas barang retur,panduan mengemas barang retur 1. gunakan kemasan yang aman dan rapi 2. pastikan semua label original masih terpasang 3. sertakan nota pembelian 4. lampirkan formulir retur
+Wilayah pengiriman COD,Wilayah Jabodetabek dan sekitarnya.,shipping,22,35,wilayah pengiriman cod,wilayah jabodetabek dan sekitarnya.
+Apa buku favorit mu?,Aku tidak suka baca.,conversation,20,20,apa buku favorit mu?,aku tidak suka baca.
+Metode pembayaran,"Kami menerima pembayaran melalui:
+1. Transfer Bank:
+   - BCA
+   - Mandiri
+   - BNI
+   - BRI
+2. E-Wallet:
+   - OVO
+   - GoPay
+   - DANA
+   - ShopeePay
+3. Kartu Kredit (Visa/Mastercard)
+4. COD (Cash On Delivery)*
+
+*COD tersedia untuk wilayah tertentu
+",payment,17,249,metode pembayaran,kami menerima pembayaran melalui 1. transfer bank bca mandiri bni bri 2. ewallet ovo gopay dana shopeepay 3. kartu kredit visamastercard 4. cod cash on delivery cod tersedia untuk wilayah tertentu
+Apakah kamu seorang programer?,Aku seorang programer,conversation,30,21,apakah kamu seorang programer?,aku seorang programer
+Bagaimana kabar mu?,"Kabar ku baik, kamu bagaimana?",greetings,19,30,bagaimana kabar mu?,"kabar ku baik, kamu bagaimana?"
+Apa kabar?,"Alhamdulillah baik, Kamu bagaimana?",greetings,10,35,apa kabar?,"alhamdulillah baik, kamu bagaimana?"
+Hi,Halo! Ada yang bisa kami bantu?,greetings,2,31,hi,halo! ada yang bisa kami bantu?
+Hey,Halo! Ada yang bisa kami bantu?,greetings,3,31,hey,halo! ada yang bisa kami bantu?
+Baik juga bro,Syukur deh bro,greetings,13,14,baik juga bro,syukur deh bro
+"Selamat pagi, apa kabarnya?","kabar saya baik, bagaimana dengan mu?",conversation,27,37,"selamat pagi, apa kabarnya?","kabar saya baik, bagaimana dengan mu?"
+Berapa lama proses retur,"Proses retur membutuhkan waktu 3-5 hari kerja setelah barang diterima di gudang kami.
+
+Timeline proses:
+1. Pengiriman ke gudang (2-3 hari)
+2. Pengecekan barang (1-2 hari)
+3. Persetujuan retur (1 hari)
+4. Pengembalian dana (1-2 hari)
+",retur,24,233,berapa lama proses retur,proses retur membutuhkan waktu 35 hari kerja setelah barang diterima di gudang kami. timeline proses 1. pengiriman ke gudang 23 hari 2. pengecekan barang 12 hari 3. persetujuan retur 1 hari 4. pengembalian dana 12 hari
+Kapankan presiden Soekarno dikudeta oleh Soeharto?,1962,trivia,50,4,kapankan presiden soekarno dikudeta oleh soeharto?,1962
+Apakah nama satelit pertama yang dimiliki oleh Indonesia?,Palapa,trivia,57,6,apakah nama satelit pertama yang dimiliki oleh indonesia?,palapa
+Apakah aku benar-benar hidup?,Itu tergantung dari bagaimana kamu mendefinisikan hidup itu sendiri.,conversation,29,68,apakah aku benarbenar hidup?,itu tergantung dari bagaimana kamu mendefinisikan hidup itu sendiri.
+Salam!,Halo,greetings,6,4,salam!,halo
+"Hai, apa kabar?",Jadi lebih baikan.,greetings,15,18,"hai, apa kabar?",jadi lebih baikan.
+Bagaimana?,Tidak banyak yang berubah.,greetings,10,26,bagaimana?,tidak banyak yang berubah.
+"Hai, bagaimana kabar?",Baik,greetings,21,4,"hai, bagaimana kabar?",baik
+Kamu siapa?,Siapa? Bukan aku bukan siapa,conversation,11,28,kamu siapa?,siapa? bukan aku bukan siapa
+Bagaimana kabar?,"Sangat baik, terimakasih.",greetings,16,25,bagaimana kabar?,"sangat baik, terimakasih."
+Mohon bantuan,"Tentu, ada yang bisa kami bantu?",greetings,13,32,mohon bantuan,"tentu, ada yang bisa kami bantu?"
+Semoga pagi mu menyenangkan!,Dan hari mu juga menyenangkan.,greetings,28,30,semoga pagi mu menyenangkan!,dan hari mu juga menyenangkan.
+Tanggal berapakah Indonesia merdeka?,17 Agustus 1945,trivia,36,15,tanggal berapakah indonesia merdeka?,17 agustus 1945
+Gunung tertinggi di dunia adalah?,Everest.,trivia,33,8,gunung tertinggi di dunia adalah?,everest.
+"Hai, apa kabar?",Oke,greetings,15,3,"hai, apa kabar?",oke
+Apa kabar?,Biasa saja.,greetings,10,11,apa kabar?,biasa saja.
+Selamat malam,Malam juga,greetings,13,10,selamat malam,malam juga
+Salah siapa?,Salah Ahok,trivia,12,10,salah siapa?,salah ahok
+Halo,Hai,conversation,4,3,halo,hai
+Apa artinya YOLO?,Itu artinya you only live once. Kamu tahu dari mana?,conversation,17,52,apa artinya yolo?,itu artinya you only live once. kamu tahu dari mana?
+Selamat sore,Selamat sore! Ada yang bisa kami bantu?,greetings,12,39,selamat sore,selamat sore! ada yang bisa kami bantu?
+Apakah bisa bayar pakai kartu kredit,"Ya, kami menerima pembayaran menggunakan kartu kredit Visa dan Mastercard.
+Pembayaran dijamin aman dengan enkripsi SSL.
+",payment,36,120,apakah bisa bayar pakai kartu kredit,"ya, kami menerima pembayaran menggunakan kartu kredit visa dan mastercard. pembayaran dijamin aman dengan enkripsi ssl."
+"Hai, senang berkenalan dengan mu.","Terimakasih. Aku juga, senang berkenalan dengan mu.",greetings,33,51,"hai, senang berkenalan dengan mu.","terimakasih. aku juga, senang berkenalan dengan mu."
+Kuenya hanyalah kebohongan.,Bukan. Kuenya enak.,conversation,27,19,kuenya hanyalah kebohongan.,bukan. kuenya enak.
+Apa kabar?,"Kabar ku baik, kamu?",conversation,10,20,apa kabar?,"kabar ku baik, kamu?"
+Assalamu'alaikum,Wa'alaikum salam. Ada yang bisa kami bantu?,greetings,16,43,assalamualaikum,waalaikum salam. ada yang bisa kami bantu?
+Apa kabar?,"Masih begini-begini saja, kamu bagaimana?",greetings,10,41,apa kabar?,"masih beginibegini saja, kamu bagaimana?"
+Selamat sore,Sore juga,greetings,12,9,selamat sore,sore juga
+Monster salju di daerah himalaya disebut?,Yeti,trivia,41,4,monster salju di daerah himalaya disebut?,yeti
+Bisakah aku bertanya sesuatu?,Silahkan bertanya.,conversation,29,18,bisakah aku bertanya sesuatu?,silahkan bertanya.
+Bayar pakai apa saja,"Kami menerima pembayaran melalui:
+1. Transfer Bank
+2. E-Wallet
+3. Kartu Kredit
+4. COD (wilayah tertentu)
+
+Metode mana yang ingin Anda gunakan?
+",payment,20,143,bayar pakai apa saja,kami menerima pembayaran melalui 1. transfer bank 2. ewallet 3. kartu kredit 4. cod wilayah tertentu metode mana yang ingin anda gunakan?
+Bagaimana cara lacak pesanan?,"Untuk melacak pesanan Anda:
+1. Login ke akun Anda
+2. Klik menu ""Pesanan Saya""
+3. Pilih pesanan yang ingin dilacak
+4. Lihat status pengiriman terkini
+Atau masukkan nomor resi di kolom pelacakan.
+",shipping,29,194,bagaimana cara lacak pesanan?,untuk melacak pesanan anda 1. login ke akun anda 2. klik menu pesanan saya 3. pilih pesanan yang ingin dilacak 4. lihat status pengiriman terkini atau masukkan nomor resi di kolom pelacakan.
+"Hai, bagaimana kabar?",Tidak cukup baik.,greetings,21,17,"hai, bagaimana kabar?",tidak cukup baik.
+Hai,Halo! Ada yang bisa kami bantu?,greetings,3,31,hai,halo! ada yang bisa kami bantu?
+Rumit masih mending daripada ruwet.,Simpel lebih baik daripada rumit,conversation,35,32,rumit masih mending daripada ruwet.,simpel lebih baik daripada rumit
+Apa kabar?,Tidak begitu baik.,greetings,10,18,apa kabar?,tidak begitu baik.
+Selamat pagi,Selamat pagi! Ada yang bisa kami bantu?,greetings,12,39,selamat pagi,selamat pagi! ada yang bisa kami bantu?
+Hi bro apa kabar?,"Baik bro, gimana kabar lo bro?",greetings,17,30,hi bro apa kabar?,"baik bro, gimana kabar lo bro?"
+Apa kabar?,Aku baik-baik saja.,greetings,10,19,apa kabar?,aku baikbaik saja.
+Senang berkenalan dengan mu.,Terimakasih. Aku juga.,greetings,28,22,senang berkenalan dengan mu.,terimakasih. aku juga.
+Selamat pagi,Pagi juga,greetings,12,9,selamat pagi,pagi juga
+Cara bayar,"Kami menerima pembayaran melalui:
+1. Transfer Bank
+2. E-Wallet
+3. Kartu Kredit
+4. COD (wilayah tertentu)
+
+Metode mana yang ingin Anda gunakan?
+",payment,10,143,cara bayar,kami menerima pembayaran melalui 1. transfer bank 2. ewallet 3. kartu kredit 4. cod wilayah tertentu metode mana yang ingin anda gunakan?
+Assalamu'alaikum,Wa'alaikum salam warohmatullah,greetings,16,30,assalamualaikum,waalaikum salam warohmatullah
+Berapa lama waktu pengiriman?,Sekitar 3-5 hari tergantung kurir pengirim.,shipping,29,43,berapa lama waktu pengiriman?,sekitar 35 hari tergantung kurir pengirim.
+Permisi,"Ya, ada yang bisa kami bantu?",greetings,7,29,permisi,"ya, ada yang bisa kami bantu?"
+Selamat siang,Selamat siang! Ada yang bisa kami bantu?,greetings,13,40,selamat siang,selamat siang! ada yang bisa kami bantu?
+Aku sedang mengerjakan sebuah proyek,Proyek apa yang kau kerjakan?,conversation,36,29,aku sedang mengerjakan sebuah proyek,proyek apa yang kau kerjakan?
+"Hai, apa kabar?",Baik,greetings,15,4,"hai, apa kabar?",baik
+Bahasa Inggris dari kapal selam adalah?,Submarine.,trivia,39,10,bahasa inggris dari kapal selam adalah?,submarine.
