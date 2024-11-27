@@ -1,6 +1,6 @@
 # Chatbot Customer Service
 
-Chatbot untuk layanan pelanggan menggunakan ChatterBot dan Flask.
+Chatbot layanan pelanggan berbasis Flask dan ChatterBot yang mendukung beberapa kategori layanan, dilengkapi dengan fitur prediksi berbasis Machine Learning.
 
 ## Fitur
 
@@ -19,6 +19,8 @@ Chatbot untuk layanan pelanggan menggunakan ChatterBot dan Flask.
 - Flask
 - ChatterBot
 - HTML/CSS/JavaScript
+- Matplotlib & Seaborn (untuk evaluasi model)
+- NLTK (untuk preprocessing teks)
 
 ## Instalasi
 
@@ -58,6 +60,7 @@ python app.py
 chatbot_project/
 ├── app.py                     # File utama aplikasi Flask
 ├── chatbot.py                 # Logic chatbot dan training
+├── chatbot_updated.py         # Versi baru chatbot dengan fallback logic
 ├── requirements.txt           # Dependensi project
 ├── README.md                  # Dokumentasi
 ├── templates/                 # Template HTML
@@ -67,8 +70,26 @@ chatbot_project/
 │   │   └── style.css
 │   └── js/
 │       └── chat.js
-└── my_corpus/                 # Data training
-    └── customer_support.yml
+├── chatterbot_corpus/         # Dataset YAML untuk chatbot
+│   └── data/indonesian/
+│       ├── payment.yml
+│       ├── retur.yml
+│       ├── shipping.yaml
+│       ├── conversations.yml
+│       ├── greetings.yml
+│       └── trivia.yml
+├── notebooks/                 # Notebook Jupyter untuk pelatihan model
+│   ├── 1_data_preparation.ipynb
+│   ├── 2_model_training.ipynb
+│   ├── 3_model_evaluation.ipynb
+│   └── 3_model_evaluation_updated.ipynb
+├── model/                     # Direktori untuk model dan tokenizer
+│   ├── chatbot_model.h5
+│   └── tokenizers/
+│       ├── question_tokenizer.pkl
+│       └── answer_tokenizer.pkl
+└── logs/                      # Direktori untuk log aplikasi
+    └── chatbot.log
 ```
 
 ## Penggunaan
