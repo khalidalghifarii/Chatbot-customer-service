@@ -25,7 +25,7 @@ body {
 
 /* Header Styles */
 .chat-header {
-  background: #075e54;
+  background: #2c3e50;
   color: white;
   padding: 20px;
   border-radius: 10px 10px 0 0;
@@ -64,8 +64,10 @@ body {
   }
 }
 
+/* Message Styles */
 .user-message {
-  background-color: #dcf8c6;
+  background-color: #3498db; /* Biru lebih terang untuk pengguna */
+  color: white; /* Teks putih untuk kontras */
   margin-left: auto;
   border-bottom-right-radius: 5px;
 }
@@ -111,7 +113,7 @@ body {
 /* Button Styles */
 button {
   padding: 12px 24px;
-  background: #075e54;
+  background: #2c3e50; /* Warna yang konsisten dengan header */
   color: white;
   border: none;
   border-radius: 25px;
@@ -121,7 +123,7 @@ button {
 }
 
 button:hover {
-  background: #128c7e;
+  background: #34495e;
 }
 
 button:active {
@@ -228,9 +230,9 @@ button:active {
 }
 
 .faq-button {
-  background: #ffffff;
-  color: #075e54;
-  border: 1px solid #075e54;
+  background: #34495e; /* Biru tua untuk kontras */
+  color: white; /* Teks putih */
+  border: 1px solid #2c3e50;
   padding: 8px 16px;
   border-radius: 20px;
   font-size: 0.9em;
@@ -241,8 +243,8 @@ button:active {
 }
 
 .faq-button:hover {
-  background: #075e54;
-  color: #ffffff;
+  background: #2c3e50; /* Gelap saat hover */
+  color: white;
 }
 
 /* Quick Reply Styles */
@@ -253,17 +255,19 @@ button:active {
   margin-top: 10px;
 }
 
+/* Quick Reply Styles */
 .quick-reply {
-  background: #e3f2fd;
+  background: #95a5a6; /* Abu-abu netral untuk quick reply */
+  color: white;
   padding: 8px 16px;
   border-radius: 16px;
   font-size: 0.9em;
   cursor: pointer;
-  border: 1px solid #90caf9;
+  border: 1px solid #7f8c8d;
   transition: all 0.2s;
 }
 
 .quick-reply:hover {
-  background: #bbdefb;
+  background: #7f8c8d; /* Abu-abu lebih gelap */
   transform: translateY(-1px);
 }
