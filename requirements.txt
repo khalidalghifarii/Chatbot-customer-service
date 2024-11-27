@@ -1,9 +1,18 @@
-Flask==3.1.0
-ChatterBot==1.0.0
-PyYAML==3.13
-python-dateutil==2.9.0.post0
-nltk==3.9.1
-SQLAlchemy==1.2.19
-matplotlib==3.9.2
-seaborn==0.13.2
-numpy==2.0.2
+# Core dependencies
+Flask==2.2.3          # Framework utama untuk aplikasi
+Werkzeug==2.2.3       # Dependency untuk Flask (versi kompatibel)
+
+# Chatbot dependencies
+ChatterBot==1.0.0     # Library utama untuk chatbot
+chatterbot-corpus==1.2.0  # Dataset untuk ChatterBot
+PyYAML==3.13          # Parsing YAML untuk dataset
+
+# Data and utility dependencies
+python-dateutil==2.7.5  # Manipulasi tanggal/waktu
+SQLAlchemy==1.2.19      # ORM untuk database (SQLite)
+
+# NLP and machine learning dependencies
+nltk==3.9.1            # Natural Language Toolkit
+numpy==1.24.0          # Operasi matematika numerik
+matplotlib==3.9.2      # Visualisasi data
+seaborn==0.13.2        # Library untuk statistik dan plotting
