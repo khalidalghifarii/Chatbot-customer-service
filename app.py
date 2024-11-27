@@ -1,12 +1,15 @@
-# app.py
 from flask import Flask, request, jsonify, render_template, session
-from chatbot import initialize_and_train, ChatBot
+from chatterbot import ChatBot
+from chatterbot.trainers import ChatterBotCorpusTrainer
 from datetime import datetime
 import logging
 import uuid
 import json
 import os
 from typing import Dict
+import collections.abc
+
+collections.Hashable = collections.abc.Hashable
 
 # Inisialisasi Flask app
 app = Flask(__name__)
@@ -21,7 +24,7 @@ DATABASE_DIR = os.path.join(BASE_DIR, 'database')
 os.makedirs(LOG_DIR, exist_ok=True)
 os.makedirs(DATABASE_DIR, exist_ok=True)
 
-# Konfigurasi logging yang lebih komprehensif
+# Konfigurasi logging
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
@@ -47,8 +50,8 @@ if os.path.exists(CHAT_HISTORY_FILE):
     except Exception as e:
         logger.error(f"Error loading chat history: {str(e)}")
 
-# Inisialisasi chatbot dan pelatihan
-logger.info("Initializing chatbot and training data...")
+# Inisialisasi chatbot dan latih dataset
+logger.info("Initializing chatbot...")
 chatbot = ChatBot(
     "CustomChatBot",
     storage_adapter="chatterbot.storage.SQLStorageAdapter",
@@ -62,35 +65,19 @@ chatbot = ChatBot(
     database_uri=f"sqlite:///{os.path.join(DATABASE_DIR, 'database.sqlite3')}",
 )
 
-def save_chat_state():
-    """Menyimpan state chat ke file"""
-    try:
-        with open(CHAT_HISTORY_FILE, 'w') as f:
-            json.dump(chat_sessions, f, indent=2)
-    except Exception as e:
-        logger.error(f"Error saving chat state: {str(e)}")
-
-def save_chat_history(session_id: str, user_message: str, bot_response: str):
-    """Fungsi untuk menyimpan riwayat chat"""
-    if session_id not in chat_sessions:
-        chat_sessions[session_id] = {
-            'history': [],
-            'start_time': datetime.now().isoformat(),
-            'last_activity': datetime.now().isoformat()
-        }
-    
-    chat_sessions[session_id]['history'].append({
-        'timestamp': datetime.now().isoformat(),
-        'user_message': user_message,
-        'bot_response': bot_response
-    })
-    chat_sessions[session_id]['last_activity'] = datetime.now().isoformat()
-    
-    # Simpan ke file
-    save_chat_state()
+trainer = ChatterBotCorpusTrainer(chatbot)
+logger.info("Training chatbot with dataset...")
+trainer.train(
+    os.path.join(BASE_DIR, "chatterbot_corpus", "data", "indonesian", "payment.yml"),
+    os.path.join(BASE_DIR, "chatterbot_corpus", "data", "indonesian", "retur.yml"),
+    os.path.join(BASE_DIR, "chatterbot_corpus", "data", "indonesian", "shipping.yaml"),
+    os.path.join(BASE_DIR, "chatterbot_corpus", "data", "indonesian", "conversations.yml"),
+    os.path.join(BASE_DIR, "chatterbot_corpus", "data", "indonesian", "greetings.yml"),
+    os.path.join(BASE_DIR, "chatterbot_corpus", "data", "indonesian", "trivia.yml"),
+)
 
 def get_suggested_responses(user_message: str) -> list:
-    """Fungsi untuk mendapatkan suggested responses berdasarkan konteks"""
+    """Fungsi untuk mendapatkan suggested responses berdasarkan konteks."""
     user_message = user_message.lower()
     
     # Dictionary untuk mapping kata kunci dengan saran
@@ -150,8 +137,30 @@ def get_suggested_responses(user_message: str) -> list:
     
     return suggestions[:3]  # Batasi maksimal 3 saran
 
-# Inisialisasi chatbot
-initialize_and_train()
+def save_chat_state():
+    """Menyimpan state chat ke file."""
+    try:
+        with open(CHAT_HISTORY_FILE, 'w') as f:
+            json.dump(chat_sessions, f, indent=2)
+    except Exception as e:
+        logger.error(f"Error saving chat state: {str(e)}")
+
+def save_chat_history(session_id: str, user_message: str, bot_response: str):
+    """Fungsi untuk menyimpan riwayat chat."""
+    if session_id not in chat_sessions:
+        chat_sessions[session_id] = {
+            'history': [],
+            'start_time': datetime.now().isoformat(),
+            'last_activity': datetime.now().isoformat()
+        }
+    
+    chat_sessions[session_id]['history'].append({
+        'timestamp': datetime.now().isoformat(),
+        'user_message': user_message,
+        'bot_response': bot_response
+    })
+    chat_sessions[session_id]['last_activity'] = datetime.now().isoformat()
+    save_chat_state()
 
 @app.route('/')
 def home():
@@ -193,53 +202,6 @@ def get_bot_response():
         return jsonify({
             'response': 'Maaf, terjadi kesalahan. Silakan coba lagi.'
         }), 500
-
-@app.route('/chat_history/<session_id>', methods=['GET'])
-def get_chat_history(session_id):
-    """Endpoint untuk mendapatkan riwayat chat."""
-    try:
-        if session_id in chat_sessions:
-            return jsonify(chat_sessions[session_id])
-        return jsonify({'error': 'Sesi tidak ditemukan'}), 404
-    except Exception as e:
-        logger.error(f"Error dalam get_chat_history: {str(e)}")
-        return jsonify({'error': 'Terjadi kesalahan'}), 500
-
-@app.route('/feedback', methods=['POST'])
-def save_feedback():
-    """Endpoint untuk menyimpan feedback pengguna."""
-    try:
-        data = request.json
-        session_id = data.get('session_id')
-        feedback = data.get('feedback')
-        
-        if session_id in chat_sessions:
-            chat_sessions[session_id]['feedback'] = feedback
-            
-            # Simpan feedback ke file terpisah
-            try:
-                feedbacks = {}
-                if os.path.exists(FEEDBACK_FILE):
-                    with open(FEEDBACK_FILE, 'r') as f:
-                        feedbacks = json.load(f)
-                
-                feedbacks[session_id] = {
-                    'feedback': feedback,
-                    'timestamp': datetime.now().isoformat()
-                }
-                
-                with open(FEEDBACK_FILE, 'w') as f:
-                    json.dump(feedbacks, f, indent=2)
-            except Exception as e:
-                logger.error(f"Error saving feedback: {str(e)}")
-            
-            logger.info(f"Feedback diterima untuk sesi {session_id}: {feedback}")
-            return jsonify({'status': 'success'})
-            
-        return jsonify({'error': 'Sesi tidak ditemukan'}), 404
-    except Exception as e:
-        logger.error(f"Error dalam save_feedback: {str(e)}")
-        return jsonify({'error': 'Terjadi kesalahan'}), 500
 
 @app.route('/clear_chat', methods=['POST'])
 def clear_chat():
