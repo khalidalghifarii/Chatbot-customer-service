@@ -27,10 +27,29 @@ body {
 .chat-header {
   background: #2c3e50;
   color: white;
-  padding: 20px;
+  padding: 30px 20px; /* Tingkatkan padding vertikal */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Pusatkan konten */
+  position: relative; /* Supaya logo tetap bisa di kiri */
   border-radius: 10px 10px 0 0;
-  text-align: center;
-  position: relative;
+  height: 100px; /* Tambahkan tinggi tetap */
+}
+
+.chat-header img {
+  position: absolute; /* Posisi absolut untuk logo */
+  left: 20px; /* Tempatkan logo di kiri */
+  top: 50%; /* Vertikal sejajar tengah */
+  transform: translateY(-50%); /* Koreksi agar benar-benar di tengah */
+  width: 100px; /* Ukuran logo */
+  height: 70px;
+}
+
+.chat-header h2 {
+  font-size: 1.8rem;
+  margin: 0;
+  font-weight: bold;
+  text-align: center; /* Posisi teks kiri */
 }
 
 /* Chat Box Styles */
